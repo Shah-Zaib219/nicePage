@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 
 const Four = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -8,11 +7,13 @@ const Four = () => {
   const openModal = (imageUrl, index) => {
     setSelectedImage(imageUrl);
     setCurrentIndex(index);
+    document.getElementById('imageModal').style.display = 'block';
   };
 
   const closeModal = () => {
     setSelectedImage(null);
     setCurrentIndex(null);
+    document.getElementById('imageModal').style.display = 'none';
   };
 
   const goToNext = () => {
@@ -41,20 +42,14 @@ const Four = () => {
         </div>
       ))}
 
-
-<Modal
-  isOpen={selectedImage !== null}
-  onRequestClose={closeModal}
-  contentLabel="Image Modal"
-  className="modal-content"
-  overlayClassName="modal-overlay"
->
-  <button onClick={goToPrevious} className="modal-button left">&lt;</button>
-  <img src={selectedImage} alt='' className="modal-image" />
-  <button onClick={goToNext} className="modal-button right">&gt;</button>
-  <button onClick={closeModal} className="modal-close-button">Close Modal</button>
-</Modal>
-
+      {/* Default Modal */}
+      <div id="imageModal" className="modal">
+        <span className="modal-close" onClick={closeModal}>&times;</span>
+        <button onClick={goToPrevious} className="modal-button left">&lt;</button>
+        <img src={selectedImage} alt='' className="modal-image" />
+        <button onClick={goToNext} className="modal-button right">&gt;</button>
+        <button onClick={closeModal} className="modal-close-button">Close</button>
+      </div>
     </div>
   );
 };

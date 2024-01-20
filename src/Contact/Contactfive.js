@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 
 const Contactfive = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -8,21 +7,23 @@ const Contactfive = () => {
   const openModal = (imageUrl, index) => {
     setSelectedImage(imageUrl);
     setCurrentIndex(index);
+    document.getElementById('imageModal').style.display = 'block';
   };
 
   const closeModal = () => {
     setSelectedImage(null);
     setCurrentIndex(null);
+    document.getElementById('imageModal').style.display = 'none';
   };
 
   const goToNext = () => {
-    const nextIndex = (currentIndex + 1) % 8; // Assuming you have 3 images
+    const nextIndex = (currentIndex + 1) % 8; // Assuming you have 8 images
     setSelectedImage(images[nextIndex]);
     setCurrentIndex(nextIndex);
   };
 
   const goToPrevious = () => {
-    const previousIndex = (currentIndex - 1 + 8) % 8; // Assuming you have 3 images
+    const previousIndex = (currentIndex - 1 + 8) % 8; // Assuming you have 8 images
     setSelectedImage(images[previousIndex]);
     setCurrentIndex(previousIndex);
   };
@@ -46,20 +47,14 @@ const Contactfive = () => {
         </div>
       ))}
 
-
-<Modal
-  isOpen={selectedImage !== null}
-  onRequestClose={closeModal}
-  contentLabel="Image Modal"
-  className="modal-content"
-  overlayClassName="modal-overlay"
->
-  <button onClick={goToPrevious} className="modal-button left">&lt;</button>
-  <img src={selectedImage} alt='' className="modal-image" />
-  <button onClick={goToNext} className="modal-button right">&gt;</button>
-  <button onClick={closeModal} className="modal-close-button">Close Modal</button>
-</Modal>
-
+      {/* Default Modal */}
+      <div id="imageModal" className="modal">
+        <span className="modal-close" onClick={closeModal}>&times;</span>
+        <button onClick={goToPrevious} className="modal-button left">&lt;</button>
+        <img src={selectedImage} alt='' className="modal-image" />
+        <button onClick={goToNext} className="modal-button right">&gt;</button>
+        <button onClick={closeModal} className="modal-close-button">Close</button>
+      </div>
     </div>
   );
 };
