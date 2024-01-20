@@ -1,38 +1,1107 @@
-.App {
-  text-align: center;
+body{
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+.one {
+  width: 100%;
+  height: 900px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d2322952c821563c9989f1aa/pexels-photo-3136673.jpeg);
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navcss {
+  margin: 0;
+  padding: 0;
+  background: transparent !important; /* Use !important to override other styles */
+  color: white;
+  border: 1px solid white;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navcsss{
+  padding: 0;
+  margin: 0;
+  padding: 1% 10%;
+}
+.collapse h2{
+  color: white;
+  font-weight: 600;
+}
+.collapse .nav-item{
+  color: white;
+  font-weight: 600;
+}
+.collapse h2:hover{
+  color: white;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+  .collapse .nav-item:hover{
+    color: white;
+    font-weight: 700;
+    border-bottom: 1px solid white;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.collapse link{
   color: white;
 }
+.collapse ul li :hover{
+  color: white;
+  font-weight: 700;
+  border-bottom: 1px solid white;
+}
+.collapse ul li :active{
+  color: red;
+  font-weight: 700;
+  border-bottom: 1px solid red;
+}
+.collapse ul li a{
+  color: white;
+}
+/* Your existing styles... */
 
-.App-link {
-  color: #61dafb;
+.navbar-toggler-icon {
+  fill: white; /* Set the background color of the burger icon to white */
+}
+.onesub{
+  text-align: center;
+  color: white;
+  padding: 21% 16% 0 16%;
+}
+.onesub h2{
+  padding: 2%;
+  font-weight: 700;
+  font-size: 56px;
+}
+.onesub p{
+  font-size: 18px;
+}
+.onesub span{
+  font-size: 100px;
+  font-weight: 700;
+  color: #f17c0e;
+  letter-spacing: -1px;
+  
+}
+.two {
+  padding: 5%;
+  text-align: center;
+  color: white;
+}
+ h2 {
+  padding: 1%;
+  font-weight: 600;
+  font-size: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.subtwo {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.subsubtwo {
+  max-width: 400px;
+  text-align: center;
+  margin: 20px; /* Add margin for spacing between subsubtwo items */
+}
+
+.subsubtwo h3 {
+  color: white;
+  padding: 2%;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.subsubtwo p {
+  color: gainsboro;
+  padding: 2%;
+}
+.two .subsubtwo span{
+  color: white;
+  font-weight: 400;
+  font-size: 46px;
+  text-align: center;
+}
+.btn {
+  border-radius: 25px;
+  background-color: black;
+  color: #f17c0e;
+  border: 1px solid #f17c0e;
+  padding: 3% 4%;
+  margin: 2%;
+}
+
+.btn:hover {
+  background-color: #f17c0e;
+}
+
+.subtwoimg {
+  margin-left: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content vertically */
+  width: 80px;
+  height: 80px;
+  background-color: #f17c0e;
+  border-radius: 50%;
+  margin-bottom: 10px; /* Add margin to separate the image from other content */
+}
+
+.subtwoimg img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.three{
+  padding: 5% 5% 0 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.subthree1{
+  max-width: 600px;
+  padding: 5% 5% 5% 0;
+}
+.subthree2{
+  max-width: 600px;
+  background-color: #f17c0e;
+  padding: 5%;
+}
+.three p{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.three ol li{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.four {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.four .subfour {
+  padding: 1%;
+  overflow: hidden;  /* Ensure that images don't overflow their containers */
+}
+
+.four .subfour img {
+  width: 370px;
+  height: 250px;  /* Set a fixed height for the images */
+  object-fit: cover;  /* Maintain aspect ratio while covering the container */
+  max-width: 400px;
+}
+.four .subfour img:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: cover;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: cover;
+}
+
+.modal-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-button:disabled {
+  background-color: #d9d9d9;
+  color: #595959;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-close-button:hover {
+  background-color: #0056b3;
+}
+.modal-button {
+  position: absolute;
+  top: 50%;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-button:hover {
+  background-color: #0056b3;
+}
+
+.modal-button:disabled {
+  background-color: #d9d9d9;
+  color: #595959;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.modal-close-button:hover {
+  background-color: #0056b3;
+}
+
+/* Positioning for Previous and Next buttons */
+.modal-button.left {
+  left: 10px;
+}
+
+.modal-button.right {
+  right: 10px;
+}
+.five{
+  color: white;
+  font-weight: 500;
+  padding: 5%;
+}
+.subfive2{
+  padding-right: 10%;
+  text-align: right;
+}
+.subfive2 h3{
+  font-weight: 700;
+  font-size: 32px;
+}
+.subfive1 h2{
+  font-weight: 700;
+  padding-left: 7%;
+font-size: 56px;
+}
+.six{
+  padding: 7%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.six .subsix1{
+
+  max-width: 600px;
+}
+.six .subsix1 .p1{
+  padding: 2%;
+  background-color: #f17c0e;
+  margin: 1% 0 1% 0;
+}
+.six .subsix1 h4{
+  text-decoration: underline;
+}
+.six .subsix2 {
+  width: 45%; /* Set a maximum width for the container */
+  max-height: 500px; /* Set a fixed height for the container */
+  object-fit: cover;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.six .subsix2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.seven{
+  padding: 2% 7%;
+  color: white;
+}
+.seven .subseven{
+  text-align: center;
+}
+.seven h2{
+  font-weight: 700;
+font-size: 56px;
+}
+.seven .subseven1, .subseven1btn{
+  background: none;
+  border-color: transparent;
+  color: white;
+}.seven .subseven1btn{
+  border-bottom: 1px solid white;
+  font-weight: 700;
+}
+.seven button:active {
+  background:none;
+  background-color: #f17c0e;
+  color: white;
+  box-shadow: none;
+}
+.seven .accordion{
+  padding: 5%;
+}
+.eight{
+  width: 100%;
+  padding: 2% 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.eight .subeight1{
+  max-width: 700px;
+  min-width: 300px;
+}
+.eight .subeight2{
+  max-width: 300px;
+  color: white;
+  text-align: right;
+}
+.eight .subeight1 img{
+  width: 100%;
+}
+.nine{
+  width: 100%;
+  padding: 4% 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10%;
+  color: white;
+}
+.nine .subnine1{
+  max-width: 600px;
+}
+.nine .subnine2{
+  max-width: 500px;
+}
+.nine .subnine2 form{
+  width: 100%;
+}
+.nine .subnine2 .text{
+  background-color: transparent;
+color: white;
+border: none;
+border-bottom: 1px solid white;
+min-width: 280px;
+max-width: 100%;
+padding: 3% 5%;
+}
+.ten{
+  background-color: #333333;
+  color: white;
+  padding: 3%;
+  text-align: center;
+}
+.ten .subten span{
+  color: orange;
+  text-decoration: underline;
+}
+.ten .subten{
+  margin-top: 20px;
+}
+/*About Start*/
+/*wellcome*/
+.aboutone {
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/d9515bad608c524b85386109/pexels-photo-1105766.jpeg);
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+.aboutonesub{
+  text-align: left;
+  color: white;
+  padding: 24% 50% 0 10%;
+}
+h2{
+  font-weight: 700;
+  font-size: 56px;
+}
+.aboutonesub p{
+  font-size: 18px;
+}
+.abouttwo{
+  padding: 2% 10%;
+  color: black;
+}
+.abouttwo p{
+  color: #c2c2c2;
+}
+.subabouttwo1 span{
+  font-weight: 400;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.subabouttwo2 .subabouttwo21{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.subabouttwo2 .subabouttwo21 .subabouttwo21img{
+  min-width: 40px;
+  min-height: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: #547da8;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 60px;
+  color: white;
+}
+.subabouttwo2 .subabouttwo21 .subabouttwo21txt{
+  min-width: 150px;
+  width: 400px;
+  padding: 2% 4%;
+}
+.subabouttwo2 .subabouttwo21 .subabouttwo21txt h4{
+  font-size: 22px;
+  font-weight: 400;
+}
+.flex{
+  max-width: 500px;
+  min-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.aboutthree{
+  padding: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.aboutthree .subaboutthree1{
+  min-width: 300px;
+  max-width: 350px;
+  padding: 1% 2% 8% 2%;
+}
+.aboutthree .subaboutthree1 h3{
+  border-bottom: 4px solid #547da8;
+}
+.aboutthree .subaboutthree2{
+  padding: 1% 2% 8% 2%;
+  background-color: #547da8;
+  color: white;
+  min-width: 300px;
+  max-width: 350px;
+
+}
+.aboutthree .subaboutthree2 h3{
+  border-bottom: 4px solid white;
+
+}
+.aboutthree .subaboutthree3{
+  padding: 1% 2% 8% 2%;
+  min-width: 300px;
+  max-width: 350px;
+}
+.aboutthree h3{
+ display: inline-block;
+  font-size: 25px;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+.aboutfour{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2% 10% ;
+}
+.aboutfour .subaboutfour1{
+  background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/5af9723da7b056f29b36d4e5/pexels-photo-6146810.jpeg);
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 550px;
+  min-width: 300px;
+  min-height: 350px;
+  height: 600px;
+}
+.aboutfour .subaboutfour2{
+  width: 550px;
+  min-width: 300px;
+  min-height: 500px;
+  height: 700px;
+  padding: 5% 2% 1% 2%;
+}
+ h2 span{
+  font-weight: 400;
+  font-size: 40px;
+  text-decoration: underline;
+}
+.aboutfour .subaboutfour2 p{
+  font-size: 20px;
+  margin-bottom: 8%;
+}
+.fourbtn{
+  background-color: transparent;
+  color: black;
+  border: 3px solid black;
+  padding: 2% 3%;
+  font-weight: 700;
+
+}
+.fourbtn:hover{
+  background-color: black;
+  color: white;
+}
+.aboutfive{
+  width: 100%;
+  padding: 1% 20% 1% 10% ;
+  border: none;
+  color: black;
+}
+.aboutfive p{
+  font-size: 22px;
+  font-weight: 300;
+}
+.aboutsix{
+  width: 100%;
+  padding: 2% 10%;
+  background-color: #c2c2c2;
+
+}
+.aboutsix .subaboutsix1{
+  display: flex;
+  justify-content: flex-end;
+}
+.aboutsix .subaboutsix1 .subaboutsix11{
+  min-width: 40px;
+  min-height: 40px;
+  width: 100px;
+  height: 100px;
+  background-color: #547da8;
+  border-radius: 50%;
+}
+.aboutsix .subaboutsix2 {
+  padding: 4% 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.aboutsix .subaboutsix2 .subaboutsix21{
+  background-image: url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/8f9d6b05d9d956f28ababa60/pexels-photo-7196337.jpeg);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 550px;
+  min-width: 300px;
+  min-height: 350px;
+  height: 700px;
+}
+.aboutsix .subaboutsix2 .subaboutsix22{
+  width: 550px;
+  min-width: 300px;
+  min-height: 350px;
+  height: 700px;
+  padding: 5% 2% 1% 2%;
+}
+.aboutsix .subaboutsix2 .subaboutsix221{
+  padding: 10% 5% 10% 5%;
+  font-size: 23px;
+  background-color:#547da8;
+  color: white;
+  font-weight: 400;
+}
+.aboutsix .subaboutsix2 .subaboutsix222 {
+  padding-top: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5%;
+}
+.aboutsix .subaboutsix2 .subaboutsix222 div:first-child,.subaboutsix222 div img {
+  min-width: 40px;
+  min-height: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; 
+  object-fit: cover;
+}
+.aboutseven{
+  width: 100%;
+  padding: 2% 10%;
+  color: black;
+}
+.aboutseven h2{
+  font-weight: 700;
+font-size: 56px;
+}
+.aboutseven .aboutsubseven1, .aboutsubseven1btn{
+  color: black;
+}.aboutseven .aboutsubseven1btn{
+  background-color: hsl(0, 0%, 76%,0.5);
+  font-weight: 700;
+}
+.aboutseven .answer{
+  padding: 5%;
+}
+.aboutseven .aboutsubseven1btn:hover{
+  background-color: hsl(0, 0%, 76%);
+}
+.aboutseven button:active {
+  color: black;
+  box-shadow: none;
+}
+.abouteight{
+  padding: 3% 10%;
+  background-color: #547da8;
+}
+.abouteight .aboutsubeight1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+.abouteight .aboutsubeight1 .sb81{
+  padding: 2% 3%;
+  text-align: center;
+  background-color: white;
+  width: 250px;
+  height: 250px;
+}
+.sb81 span{
+  font-size: 56px;
+  font-weight: 600;
+  color: #547da8;
+}
+.sb81 h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin: 4% 0;
+}
+.sb81 p{
+  font-size: 16px;
+}
+
+.abouteight .aboutsubeight2{
+  padding: 5% 2%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.abouteight .aboutsubeight2 .aboutsubeight21{
+  width: 500px;
+  min-width: 300px;
+  min-height: 350px;
+  height: auto;
+}
+.abouteight .aboutsubeight2 .aboutsubeight21 img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.abouteight .aboutsubeight2 .aboutsubeight22{
+  width: 500px;
+  min-width: 300px;
+  min-height: 350px;
+  height: auto;
+  padding: 5% 2% 1% 2%;
+}
+.abouteight .aboutsubeight2 .aboutsubeight22 input,.abouteight .aboutsubeight2 .aboutsubeight22 textarea{
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  width: 100%;
+  padding: 3% 2%;
+}
+input::placeholder {
+  color: hsl(0, 0%, 100%,.5); /* Replace with your desired color code */
+}
+textarea::placeholder {
+  color: hsl(0, 0%, 100%,.5); /* Replace with your desired color code */
+}
+.abouteight .aboutsubeight2 .aboutsubeight22 button{
+  background-color: white;
+  width: 100%;
+  padding: 3% 2%;
+  font-weight: 600;
+  border: none;
+}
+.abouteight .aboutsubeight2 .aboutsubeight22 button:hover{
+  background-color: hsl(0, 0%, 100%,0.8);
+}
+/*Contact*/
+/* wellcome */
+.contactone {
+  width: 100%;
+  height: 800px;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/693d9dc9fb7b5211a743b264/pexels-photo-5886908.jpeg);
+  background-position: center;
+  object-fit: cover;
+  display: block;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  text-align: left;
+}
+.contactonesub{
+  text-align: center;
+  padding-top: 20%;
+  color: white;
+}
+.contacttwo{
+  width: 100%;
+  padding: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+}
+.contacttwo img{
+  min-width: 100px;
+  min-height: 100px;
+  width: 150px;
+  height: auto;
+}
+.contacttwo .fade{
+  opacity: 0.5;
+}
+.contactthree{
+  width: 100%;
+  padding: 2% 10%;
+}
+.contactthree .contactsubthree1{
+  padding: 2% 1% 0 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5%;
+}
+.contactthree .contactsubthree1 .contactsubthree11{
+  width: 500px;
+  min-width: 300px;
+  min-height: 350px;
+  height: auto;
+}
+.contactthree .contactsubthree1 .contactsubthree12{
+  width: 500px;
+  min-width: 300px;
+  min-height: 350px;
+  height: auto;
+}
+.contactthree .contactsubthree1 h3{
+  font-weight: 600;
+  font-size: 26px;
+  
+  margin-bottom: 5%;
+
+}
+.contactthree .contactsubthree1 p{
+  font-size: 20px;
+  margin-bottom: 8%;
+}
+.contactthree .contactsubthree1 ul li{
+  font-size: 20px;
+  color: #ffd900;
+  font-weight: 700;
+}
+.contactthree button{
+  color: white;
+  font-weight: 600;
+  background-color: #ffd900;
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  padding: 1%;
+}
+.contactthree button:hover{
+  background-color: hsl(51, 100%, 50%,0.6);
+}
+.contactfour{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2% 10%;
+  gap: 2%;
+}
+.contactfour .contactsubfour1{
+  background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/b765b786426a53ad990e1800/pexels-photo-5069281.jpeg);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 600px;
+  min-width: 300px;
+  min-height: 350px;
+  height: 600px;
+  padding: 2% 20% 2% 5%;
+  color: white;
+}
+.contactfour .contactsubfour2{
+  width: 500px;
+  min-width: 300px;
+  min-height: 350px;
+  height: 600px;
+  padding: 20% 2% 1% 2%;
+  font-size: 20px;
+  font-weight: 100;
+}
+.contactfour .contactsubfour2 p span{
+  font-size: 46px;
+  color: #ffd900;
+}
+.contactfive {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 6% 0;
+}
+
+.contactfive .subfour {
+  width: 340px;
+  height: 250px; /* Set a fixed height for the container */
+  max-width: 400px;
+  overflow: hidden; /* Hide any overflow from images */
+}
+
+.contactfive .subfour img {
+  padding: 1%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Add a smooth transition effect */
+}
+
+.contactfive .subfour img:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.contactsix{
+  width: 100%;
+  padding: 2% 10%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+  justify-content: center;
+}
+.contactsix .contactsubsix1{
+    width: 350px;
+    height: 450px; /* Set a fixed height for the container */
+    max-width: 400px;
+    overflow: hidden; /* Hide any overflow from images */
+}
+.contactsix .contactsubsix1 img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.contactsix .contactsubsix2{
+  width: 800px;
+  height: 450px; /* Set a fixed height for the container */
+  max-width: 600px;
+  overflow: hidden;
+  padding: 15% 0% 0% 1%;
+   /* Hide any overflow from images */
+}
+.contactsix .contactsubsix2 h5{
+  font-weight: 600;
+  font-size: 30px;
+}
+.contactsix .contactsubsix2 p{
+  font-weight: 100;
+  font-size: 20px;
+}
+.contactsix .contactsubsix2 button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 2% 3%;
+}
+.contactseven{
+  background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/9407106c79535709b4c8bedd/pexels-photo-1229087.jpeg?version=);
+  width: 100%;
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 4% 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contactseven .contactsubseven{
+  display: flex;
+  gap: 5%;
+  min-width: 300px;
+  padding: 5%;
+  width: 600px;
+  
+}
+.contactsubseven1{
+  background-color: #e5e5e5;
+}
+.contactsubseven2{
+  margin: 3% 0;
+
+  background-color:#ffd900;
+}
+.contactseven .contactsubseven h3{
+  text-align: left;
+font-weight: 600;
+}
+.contactseven .contactsubseven p{
+  font-weight: 400;
+  }
+  .contacteight{
+    width: 100%;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15%;
+    text-align: center;
+  }
+  .contacteight .contactsubeight .contactsubeight1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contacteight .contactsubeight .contactsubeight1 div{
+    width: 70px;
+    height: 70px;
+    background-color: #ffd900;
+    border-radius: 6px;
+  }
+  .contacteight .contactsubeight .contactsubeight1 span{
+    font-size: 40px;
+  }
+  .contacteight .contactsubeight h2{
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .contacteight .contactsubeight p{
+    font-weight: 100;
+  }
+  .contactnine{
+    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/4710e0abff8f5ae6952c31ec/pexels-photo-5990678.jpeg?version=);
+    width: 100%;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4% 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .contactnine .contactsubnine1{
+    background-image: url(https://images03.nicepage.com/a1389d7bc73adea1e1c1fb7e/7bee820c91895237ac80d9a4/pexels-photo-6207046.jpeg);
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 450px;
+    min-width: 300px;
+    min-height: 350px;
+    height: 500px;
+    padding: 2% 20% 2% 5%;
+    color: white;
+  }
+  .contactnine .contactsubnine2{
+    background-color: white;
+    width: 650px;
+    min-width: 300px;
+    min-height: 350px;
+    height: auto;
+    padding: 5% 2% 1% 2%;
+  }
+  .contactnine .contactsubnine2 input, .contactnine .contactsubnine2 textarea{
+    margin-top: 3%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 3% 2%;
+  }
+  input::placeholder {
+    color: hsla(0, 4%, 52%, 0.5); /* Replace with your desired color code */
+  }
+  textarea::placeholder {
+    color:  hsla(0, 4%, 52%, 0.5); /* Replace with your desired color code */
+  }
+  .contactnine .contactsubnine2 button{
+    margin-top: 3%;
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    width: 20%;
+    padding: 1% 2%;
+    font-weight: 600;
+  }
